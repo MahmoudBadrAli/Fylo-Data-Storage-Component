@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    background-color: hsl(229, 57%, 11%);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.data-storage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: url("../Challenge/fylo-data-storage-component-master/images/bg-desktop.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+@media (max-width: 767px) {
+    .data-storage {
+        flex-direction: column;
+        background-image: url("../Challenge/fylo-data-storage-component-master/images/bg-mobile.png");
+        background-size: 100% 100%;
+    }
+}
+
+.right {
+    background-color: hsl(228, 56%, 26%);
+    width: 250px;
+    padding: 25px;
+    border-radius: 6px 100px 6px 6px;
+}
+
+.right .image img {
+    width: 100px;
+}
+
+.right .icons {
+    display: flex;
+}
+
+.right .icons div {
+    background-color: hsl(229, 57%, 11%);
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 15px 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right .icons img {
+    width: 20px;
+}
+
+
+.left {
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 6px;
+    color: hsl(243, 100%, 93%);
+    width: 400px;
+    height: 120px;
+    padding: 25px;
+    position: relative;
+    bottom: -9px;
+}
+
+@media (max-width: 767px) {
+    .left {
+        text-align: center;
+        width: 250px;
+        height: 135px;
+    }
+}
+
+
+.left .size {
+    font-weight: 700;
+}
+
+.left p {
+    font-size: 11px;
+    color: hsl(243, 100%, 93%);
+}
+
+.left .progress {
+    position: relative;
+    height: 12px;
+    width: calc(100% - 5px);
+    margin: 15px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    left: -10px;
+    outline: 3px solid hsl(229, 57%, 11%);
+}
+
+.left .progress span.point {
+    background-color: white;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    position: absolute;
+    right: 72px;
+    top: 1px;
+    z-index: 2;
+}
+
+@media (max-width: 767px) {
+    .left .progress span.point {
+        right: 42px;
+    }
+}
+
+.left .progress span.prog {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: linear-gradient(45deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 10px;
+}
+
+.left .stats {
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-top: -6px;
+}
+
+.left .left-size {
+    background-color: white;
+    color: hsl(229, 7%, 55%);
+    height: auto;
+    width: 160px;
+    padding: 15px;
+    border-radius: 10px 10px 0 10px;
+    position: relative;
+    left: 190px;
+    bottom: 140px;
+    font-size: 14px;
+}
+
+.left .left-size::before {
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white white transparent transparent;
+    right: 0;
+    bottom: -20px;
+}
+
+@media (max-width: 767px) {
+    .left .left-size {
+        border-radius: 10px;
+        bottom: -15px;
+        left: 20px;
+    }
+
+    .left .left-size::before {
+        border: none;
+    }
+}
+
+.left .left-size .number {
+    color: hsl(229, 57%, 11%);
+    font-weight: 700;
+    font-size: 36px;
+    margin-right: 10px;
+}
