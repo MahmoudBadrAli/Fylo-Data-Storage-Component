@@ -5,8 +5,7 @@ This is a solution to the [Fylo data storage component](https://www.frontendment
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]()
+- Live Site URL: [Add live site URL here](https://mahmoudbadrali.github.io/Fylo-Data-Storage-Component/)
 
 ## Author
 
